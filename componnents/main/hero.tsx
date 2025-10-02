@@ -24,7 +24,7 @@ const Hero = () => {
 
         <div
             className={`absolute top-0 w-full h-full flex items-center justify-end
-                ${activeLanguage?.label == "العربية" 
+                ${activeLanguage?.label == "العربية" || activeLanguage?.label == "شارع"
                 ? "bg-[linear-gradient(to_right,#000000d4,#1f1f1f96,#1f1f1f96,transparent,transparent)]" 
                 : "bg-[linear-gradient(to_left,#000000d4,#1f1f1f96,#1f1f1f96,transparent,transparent)]"}
             `}

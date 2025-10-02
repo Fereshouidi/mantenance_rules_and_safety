@@ -22,7 +22,7 @@ const Main = () => {
 
 
     useEffect(() => {
-        if (activeLanguage.label === "العربية") {
+        if (activeLanguage.label === "العربية" || activeLanguage.label === "شارع") {
             document.body.style.direction = "rtl";
             document.querySelectorAll(".auto-direction").forEach((el) => {
                 (el as HTMLElement).style.direction = "rtl";
