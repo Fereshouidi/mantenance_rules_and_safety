@@ -88,10 +88,10 @@ const RiskCard = ({
                     <div 
                         className={`risk-card card-front w-full h-full bg-white rounded-2xl shadow-2xs hover:shadow-xl flex flex-col items-center cursor-pointer gap-5 p-5 duration-500`}
                     >
-                        <img 
+                        {activeInterface == "front" && <img 
                             className='w-24 h-24 object-contain'
                             src={risk.icon}
-                        />
+                        />}
                         <p>
                             {activeLanguage && risk.titles[activeLanguage.language as keyof typeof risk.titles]}
                         </p>
