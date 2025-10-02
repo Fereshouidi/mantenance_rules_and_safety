@@ -122,6 +122,7 @@ const RiskCard = ({
                         
                         <img 
                             src="/riskCardBg.png"
+                            alt=''
                             className={`object-cover w-full h-full ${activeSide == "prevention" && "rotate-y-180 duration-500"} auto-direction absolute top-0 left-0 bottom-0 -z-10 opacity-50 `}
                         />
 
