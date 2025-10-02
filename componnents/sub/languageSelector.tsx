@@ -1,4 +1,4 @@
-import { Languages, LanguagesDispo } from '@/constent/languages';
+import { LanguagesDispo } from '@/constent/languages';
 import { LanguageContext } from '@/contexts'
 import { LanguageTypes } from '@/types';
 import React, { useContext } from 'react'
@@ -31,22 +31,4 @@ const LanguageSelector = () => {
   )
 }
 
-export default LanguageSelector
-
-
-        // <option
-        //     className='outline-none border-none' 
-        //     value="en"
-        // >EN</option>
-        // <option
-        //     className='outline-none border-none' 
-        //     value="fr"
-        // >FR</option>
-        // <option
-        //     className='outline-none border-none' 
-        //     value="ar"
-        // >AR</option>
-        // <option
-        //     className='outline-none border-none' 
-        //     value="street"
-        // >شارع</option>     
+export default LanguageSelector;

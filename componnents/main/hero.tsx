@@ -1,7 +1,6 @@
 import { headerHeight } from '@/constent'
 import { LanguageContext } from '@/contexts';
 import React, { useContext } from 'react';
-import { motion } from 'framer-motion';
 
 
 const Hero = () => {
@@ -14,11 +13,6 @@ const Hero = () => {
         className='section w-full h-full flex items-center justify-center'
         style={{    
             height: `calc(100vh - ${headerHeight}px)`,
-            // backgroundImage: `url('/hero.jpg')`,
-            // backgroundRepeat: "no-repeat",
-            // backgroundPosition: "",
-            // backgroundSize: "cover",
-            // backgroundAttachment: "fixed"
         }}
     >
         <img 
@@ -28,8 +22,6 @@ const Hero = () => {
             style={{top: `${headerHeight}px`}}
         />
 
-            {/* bg-gradient-to-l from-gray-500 to-gray-500 to-transparent */}
-
         <div
             className={`absolute top-0 w-full h-full flex items-center justify-end
                 ${activeLanguage?.label == "العربية" 
@@ -38,10 +30,10 @@ const Hero = () => {
             `}
             style={{paddingTop: `${headerHeight}px`}}
         >
-            <div className='w-[50%] h-full flex flex-col items-center justify-center gap-14 py-10 font-bold'>
+            <div className='min-w-[50%] max-w-[65%] h-full flex flex-col items-center justify-center gap-14 py-10 px-10 font-bold'>
 
                 <h6 
-                    className='text-2xl text-gray-400'
+                    className='text-2xl text-gray-300'
                 >{activeLanguage?.hero?.recognise}</h6>
 
                 <h1 
@@ -49,7 +41,7 @@ const Hero = () => {
                 >{activeLanguage?.hero?.ruleAndSafety}</h1>
 
                 <h6
-                    className='text-2xl text-gray-400'
+                    className='text-2xl text-gray-300'
                 >
                     {activeLanguage?.hero?.inTheFieldOf} 
                 </h6>
@@ -58,10 +50,9 @@ const Hero = () => {
                     className=' text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-600 to-red-600 '
                 >{activeLanguage?.hero?.industrialMaintenance}</h2>
 
-                <a href="#introduction" className='min-w-20 text-center bg-yellow-300 px-4 py-3 rounded-full text-md text-gray-700 hover:text-gray-500 hover:scale-110 duration-300'>{activeLanguage?.hero?.start}</a>
+                <a href="#introduction" className='min-w-20 text-center bg-yellow-300 px-4 py-3 rounded-full text-md text-gray-700 hover:text-white hover:scale-110 duration-300'>{activeLanguage?.hero?.start}</a>
             </div>
         </div>
-      {/* hero */}
     </div>
   )
 }

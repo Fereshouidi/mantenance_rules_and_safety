@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { colors, headerHeight } from '@/constent/index';
 import Nav from '../sub/nav';
 import LanguageSelector from '../sub/languageSelector';
-import { LanguageContext, SectionContext } from '@/contexts';
+import { LanguageContext } from '@/contexts';
 
 const Header = () => {
 

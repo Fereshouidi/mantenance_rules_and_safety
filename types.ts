@@ -12,9 +12,9 @@ export type LanguageTypes = {
         myName: string,
         hero: string,
         introduction: string,
-        Risks: string,
+        RisksAndPrevention: string,
         Prevention: string,
-        Regulations: string,
+        Instruction : string,
         Conclusion: string
     },
     hero: {
@@ -34,32 +34,89 @@ export type LanguageTypes = {
         electrical: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
         mechanical: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
         chemical: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
         noise: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
         fireExplosion: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
         falls: {
             title: string,
             subtitle: string,
+            description: string,
+            examples: string[],
+            prevention: {
+                description: string,
+                examples: string[]
+            }
         },
     },
+    instructions: {
+        description: string,
+        list: {
+            title: string,
+            eplaination: string
+        }[]
+    },
+    Conclusion: {
+        paragraphs: string[]
+    },
+    footer: {
+        createdBy: string,
+        Copyright: string,
+    },
+    sideMatters: {
+        example: string,
+        examples: string,
+        risk: string,
+        prevention: string,
+        myName: string,
+    }
     
 }
 
-export type SectionTypes = "hero" | "introduction" | "risks" | "prevention" | "regulations" | "conclusion";
+export type SectionTypes = "hero" | "introduction" | "risks" | "prevention" | "Instruction " | "conclusion";
 
 export type SectionContextType = {
     activeSection: SectionTypes
@@ -73,12 +130,49 @@ export type RiskType = {
         english: string,
         arabic: string,
         french: string,
+        chinese: string,
         street: string,
     },
     subtitles: {
         english: string,
         arabic: string,
         french: string,
+        chinese: string,
         street: string, 
+    },
+    description: {
+        english: string,
+        arabic: string,
+        french: string,
+        chinese: string,
+        street: string,
+    },
+    examples: {
+        english: string[],
+        arabic: string[],
+        french: string[],
+        chinese: string[],
+        street: string[],
+    },
+    prevention: {
+        description: {
+            english: string,
+            arabic: string,
+            french: string,
+            chinese: string,
+            street: string,    
+        },
+        examples: {
+            english: string[],
+            arabic: string[],
+            french: string[],
+            chinese: string[],
+            street: string[],    
+        }
+
     }
+}
+
+export type ConstructionsType = {
+
 }

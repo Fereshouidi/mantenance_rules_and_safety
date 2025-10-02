@@ -10,6 +10,9 @@ import Hero from '@/componnents/main/hero';
 import Introduction from '@/componnents/main/introduction';
 import { headerHeight } from '@/constent';
 import Risks from '@/componnents/main/risks';
+import Regulations from '@/componnents/main/Instruction';
+import Conclusion from '@/componnents/main/Conclusion';
+import Footer from '@/componnents/main/footer';
 
 const Main = () => {
 
@@ -49,6 +52,9 @@ const Main = () => {
                 <Hero/>
                 <Introduction/>
                 <Risks/>
+                <Regulations/>
+                <Conclusion/>
+                <Footer/>
             </SectionContext.Provider>
         </LanguageContext.Provider>
     </main>
