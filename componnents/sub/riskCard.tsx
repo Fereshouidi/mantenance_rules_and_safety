@@ -92,7 +92,7 @@ const RiskCard = ({
                             className='w-24 h-24 object-contain'
                             src={risk.icon}
                         />}
-                        <p>
+                        <p className='text-center px-2'>
                             {activeLanguage && risk.titles[activeLanguage.language as keyof typeof risk.titles]}
                         </p>
 

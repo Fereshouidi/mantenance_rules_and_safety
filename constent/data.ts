@@ -298,7 +298,7 @@ export const directionVideos = [
       english: "A maintenance worker installs milling machine guards",
       french: "Un technicien de maintenance installe les protections de la machine de fraisage",
       arabic: "عامل صيانة يركب واقيات ماكينة الطحن",
-      street: "عامل صيانة يركب واقيات ماكينة الطحن",
+      street: "عامل صيانة قاعد يركب في واقيات لماكينة",
       chinese: "维修工安装铣床防护装置"
     },
     src: "Bridgeport Milling Machine Guards(360P).mp4",
@@ -308,7 +308,7 @@ export const directionVideos = [
       english: "A simple explanation of how to enter confined spaces through a basic example",
       french: "Une explication simple sur la façon d’entrer dans des espaces confinés à travers un exemple basique",
       arabic: "شرح مبسط لكيفية الدخول إلى الأماكن المغلقة من خلال مثال مبسط",
-      street: "شرح مبسط لكيفية الدخول إلى الأماكن المغلقة من خلال مثال مبسط",
+      street: "شرح بسيط بمثال بسيط على كيفاش تدخل للبلايص الضيقة و المسكرة",
       chinese: "通过一个简单示例说明如何进入受限空间"
     },
     src: "Confined space Safety(360P).mp4",
@@ -318,7 +318,7 @@ export const directionVideos = [
       english: "A maintenance worker applies the loto concept to a machine",
       french: "Un ouvrier de maintenance applique le concept LOTO à une machine",
       arabic: "عامل صيانة يطبق مفهوم LOTO على احد الماكينات",
-      street: "عامل صيانة يطبق مفهوم LOTO على احد الماكينات",
+      street: "واحد قاعد يطبق في مفهوم LOTO على ماكينة",
       chinese: "维修工对机器应用LOTO概念"
     },
     src: "log out tag out _loto _sparky _instrumentation _valves(360P).mp4"
@@ -333,13 +333,13 @@ export const Socials = [
     url: "https://www.facebook.com/profile.php?id=100006758537339",
   },
   {
+    name: "gmail",
+    src: "/gmail.png",
+    url: "mailto:fereshouidi298@gmail.com",
+  },
+  {
     name: "website",
     src: "/website.png",
     url: "https://fareshouidi2.vercel.app/",
   },
-  {
-    name: "gmail",
-    src: "/gmail.png",
-    url: "https://myaccount.google.com/",
-  }
 ];
