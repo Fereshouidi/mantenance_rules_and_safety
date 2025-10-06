@@ -2,8 +2,27 @@
 import Image from "next/image";
 import Main from "./main";
 import { headerHeight } from "@/constent";
+import { useEffect, useState } from "react";
+import ScreenWidthWarning from "@/componnents/sub/screenWidthWarning";
 
 export default function Home() {
+
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  if (screenWidth < 1250) {
+    return (
+      <ScreenWidthWarning/>
+    )
+  }
+
   return (
     <div 
       className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen"
