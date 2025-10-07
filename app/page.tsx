@@ -17,7 +17,7 @@ export default function Home() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   
-  if (screenWidth < 1250) {
+  if (screenWidth && screenWidth < 1250) {
     return (
       <ScreenWidthWarning/>
     )
